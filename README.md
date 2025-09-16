@@ -24,20 +24,14 @@ A lightweight, responsive portfolio built with **HTML + CSS + JavaScript**.
   ├─ profile.jpg
   └─ Javad_Hussain.pdf
 
-yaml
-Copy code
-
----
-Open: https://rtx3338.github.io/Portfolio/
 
 Customize
-Replace assets/profile.jpg and assets/Javad_Hussain.pdf.
-
-Edit sections in index.html.
-
-Colors & spacing are in style.css (CSS variables at the top).
+  -Replace assets/profile.jpg and assets/Javad_Hussain.pdf.
+  
+  -Edit sections in index.html.
+  
+  -Colors & spacing are in style.css (CSS variables at the top).
 
 License
 Personal portfolio — all rights reserved.
 (You can switch to MIT if you want others to reuse it.)
-
