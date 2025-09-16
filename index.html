@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Javad Hussain | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+<header>
+  <nav>
+    <h2 class="logo">JH</h2>
+
+    <!-- Hamburger (shown on mobile) -->
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#workspace">Workspace</a></li>
+      <li><a href="#aws">AWS</a></li>
+      <li><a href="#netsec">Network & Security</a></li>
+    </ul>
+
+    <button id="darkToggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+
+  <!-- click-to-close background for mobile menu -->
+  <div class="nav-backdrop" hidden></div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="assets/profile.jpg" alt="Profile" class="profile-pic"/>
+    <h1>Javad Hussain</h1>
+    <h3>System Administrator • Google Cloud & Workspace • AWS • Cybersecurity</h3>
+    <p>Mangaluru, Karnataka, India</p>
+    <a id="cvBtn" data-cv="assets/Javad_Hussain.pdf" href="assets/Javad_Hussain.pdf" class="btn">📄 Download CV</a>
+    <!-- CV Choice Modal -->
+    <div class="modal-backdrop" id="cvModalBackdrop" hidden></div>
+
+    <div class="modal" id="cvModal" role="dialog" aria-modal="true" aria-labelledby="cvTitle" aria-describedby="cvDesc" hidden>
+        <button class="modal-close" id="cvClose" aria-label="Close dialog">✕</button>
+        <div class="modal-body">
+            <div class="modal-icon">📄</div>
+            <h3 id="cvTitle">Your CV</h3>
+            <p id="cvDesc">Would you like to view it in a new tab or download it?</p>
+
+            <div class="modal-actions">
+                <button class="btn-secondary" id="cvView">View</button>
+                <button class="btn-primary" id="cvDownload">Download</button>
+            </div>
+        </div>
+    </div>
+
+    
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>Professional Summary</h2>
+    <p>
+      System Administrator at Nakshatech Pvt Ltd with expertise in securing IT infrastructure, Windows Server, 
+      Active Directory, firewall hardening, VPNs, and ISO 27001 audits. Skilled in automation using PowerShell, 
+      cloud fundamentals, and performance monitoring. Awarded Firewall Champion 2025.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="card-1">
+      <h3>Nakshatech Pvt Ltd</h3>
+      <p><strong>System Administrator</strong> (Aug 2024 – Present)</p>
+      <ul>
+        <li>Secured IT infrastructure (Windows Server, AD, Group Policy).</li>
+        <li>Implemented firewall hardening, VPN security & ISO 27001 compliance.</li>
+        <li>Automated tasks using PowerShell.</li>
+        <li>Awarded Firewall Champion 2025.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>BCA – Distinction</h3>
+      <p>Srinivas Institute of Technology (2021–2024)</p>
+      <p><em>8th Rank in University</em></p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+        <ul class="skills">
+            <!-- Security & Network -->
+            <li>FortiGate 100F</li> <li>Policies & NAT</li><li>Interfaces/VLANs</li>
+            <li>SSL/IPsec VPN</li><li>IDS/IPS</li><li>Monitoring & Logs</li>
+
+            <!-- Microsoft -->
+            <li>Windows Server</li><li>Active Directory</li><li>Group Policy</li>
+            <li>WDS</li><li>DNS/DHCP</li><li>Domain Join</li>
+
+            <!-- Cloud & DevOps (from earlier) -->
+            <li>Google Workspace Admin</li><li>GCP</li><li>AWS</li>
+            <li>EC2</li><li>ALB/NLB</li><li>Route 53</li><li>S3</li>
+            <li>Security Groups</li><li>EKS</li><li>Docker</li><li>Kubernetes</li>
+            <li>Terraform</li><li>Ansible</li>
+
+            <!-- Ops -->
+            <li>Install/Configure/Upgrade</li><li>Troubleshooting & Support</li>
+            <li>Infrastructure Management</li><li>Documentation & Policies</li>
+        </ul>
+  </section>
+    <section id="netsec" class="section">
+        <h2>Network & Security (FortiGate 100F)</h2>
+
+        <div class="card">
+            <h3>Configuration & Operations</h3>
+            <ul class="bullets">
+            <li>Initial setup: <strong>interfaces</strong>, VLANs, <strong>zones</strong>, routing, HA basics.</li>
+            <li>Security <strong>Policies</strong>, objects, NAT, service groups, and schedules.</li>
+            <li><strong>VPN</strong>: SSL & IPsec (site-to-site, dial-up), certs, split/full tunnel, MFA.</li>
+            <li><strong>IDS/IPS</strong> profiles, AV, Web Filter, Application Control, DoS policies.</li>
+            <li>Identity & <strong>permissions</strong>: local users, LDAP/AD groups, SSO, admin RBAC.</li>
+            <li>Troubleshooting: <code>diag debug flow</code>, packet capture, logs, session table.</li>
+            <li>Monitoring: widgets, FortiView, SNMP, syslog; integration with FortiAnalyzer/SIEM.</li>
+            </ul>
+            <div class="badges">
+            <span class="badge">Interfaces & VLANs</span>
+            <span class="badge">Policies & NAT</span>
+            <span class="badge">SSL/IPsec VPN</span>
+            <span class="badge">IDS/IPS</span>
+            <span class="badge">Web Filter</span>
+            <span class="badge">App Control</span>
+            <span class="badge">Troubleshoot</span>
+            <span class="badge">Monitoring</span>
+            </div>
+        </div>
+    </section>
+    <section id="windows" class="section">
+  <h2>Windows Server & Active Directory</h2>
+
+  <div class="card">
+    <h3>Directory Services & Policies</h3>
+    <ul class="bullets">
+      <li>AD DS design: OUs, GPO strategy (user/computer), login scripts, WMI filters.</li>
+      <li>Role services: DNS, DHCP, <strong>WDS</strong> (PXE), File/Print; WSUS for patching.</li>
+      <li>Join devices to <strong>domain</strong>; manage users, groups, and delegation.</li>
+      <li>Windows installation server & Pro edition deployment with WDS imaging.</li>
+      <li>Troubleshoot auth/DNS/GPO replication; event logs; <code>dcdiag</code>/<code>repadmin</code>.</li>
+    </ul>
+    <div class="badges">
+      <span class="badge">AD DS</span>
+      <span class="badge">Group Policy</span>
+      <span class="badge">WDS</span>
+      <span class="badge">DNS/DHCP</span>
+      <span class="badge">WSUS</span>
+      <span class="badge">Domain Join</span>
+    </div>
+  </div>
+</section>
+<section id="itops" class="section">
+  <h2>IT Operations</h2>
+
+  <div class="card">
+    <h3>Infrastructure & Support</h3>
+    <ul class="bullets">
+      <li>Install, configure, and upgrade <strong>hardware, software, and network</strong> components.</li>
+      <li>Troubleshoot & support: diagnose/resolver <strong>HW/SW/Network</strong> issues; L1–L2 helpdesk.</li>
+      <li>Server & network lifecycle: backups, patching, capacity, asset & vendor coordination.</li>
+      <li>Documentation: SOPs, runbooks, topology diagrams, <strong>IT policies</strong>, and change records.</li>
+    </ul>
+    <div class="badges">
+      <span class="badge">Troubleshooting</span>
+      <span class="badge">Upgrades</span>
+      <span class="badge">Backups</span>
+      <span class="badge">Capacity</span>
+      <span class="badge">SOPs</span>
+      <span class="badge">Policies</span>
+    </div>
+  </div>
+</section>
+
+
+  <section id="workspace" class="section">
+  <h2>Google Workspace Administration</h2>
+  <div class="card">
+    <ul class="bullets">
+      <li>Create & manage <strong>users, groups, and OUs</strong>; bulk user ops and suspended users.</li>
+      <li>Apply <strong>role-based permissions</strong> (predefined & custom admin roles).</li>
+      <li>Configure <strong>storage & quotas</strong>, shared drives, retention basics (Vault).</li>
+      <li>Harden security: <strong>2-Step Verification</strong>, password policies, SSO/SAML apps.</li>
+      <li>Email routing & compliance: <strong>Gmail rules</strong>, DKIM/SPF/DMARC (with DNS).</li>
+      <li>Auditing/alerts via <strong>Admin Console</strong> and Security Center reports.</li>
+    </ul>
+
+    <div class="badges">
+      <span class="badge">Users & Groups</span>
+      <span class="badge">Admin Roles</span>
+      <span class="badge">Storage & Quotas</span>
+      <span class="badge">2SV</span>
+      <span class="badge">Vault</span>
+      <span class="badge">SSO/SAML</span>
+    </div>
+  </div>
+</section>
+<section id="aws" class="section">
+  <h2>AWS Cloud Platform</h2>
+  <div class="card">
+    <h3>Hands-on Services</h3>
+    <ul class="bullets">
+      <li><strong>EC2</strong>: provisioning, AMIs, <strong>snapshots</strong>, user-data, Auto Scaling.</li>
+      <li><strong>Load Balancing</strong>: ALB / NLB with target groups & health checks.</li>
+      <li><strong>Route 53</strong>: public/private hosted zones, A/AAAA/CNAME, health checks.</li>
+      <li><strong>S3</strong>: buckets, lifecycle policies, versioning, bucket policies, static hosting.</li>
+      <li><strong>Security</strong>: IAM roles/policies, <strong>Security Groups</strong>, NACLs.</li>
+      <li><strong>EKS</strong>: cluster setup, node groups, <strong>kubectl</strong> basics, rolling updates.</li>
+      <li><strong>Containers</strong>: Docker images, ECR push/pull, app deploys to EKS.</li>
+      <li><strong>IaC & Automation</strong>: <strong>Terraform</strong> modules, <strong>Ansible</strong> playbooks.</li>
+      <li>Monitoring: CloudWatch metrics, logs, alarms; basic cost monitoring.</li>
+    </ul>
+
+    <div class="badges">
+      <span class="badge">EC2</span>
+      <span class="badge">ALB/NLB</span>
+      <span class="badge">Route 53</span>
+      <span class="badge">S3</span>
+      <span class="badge">IAM & SG</span>
+      <span class="badge">EKS</span>
+      <span class="badge">Docker</span>
+      <span class="badge">Kubernetes</span>
+      <span class="badge">Terraform</span>
+      <span class="badge">Ansible</span>
+    </div>
+  </div>
+</section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="section">
+    <div class="card-1">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified AppSec Practitioner (CAP)</li>
+            <li>Cisco CCNA Security</li>
+            <li>AWS Cloud Practitioner Essentials</li>
+            <li>Google Digital Garage – Digital Marketing</li>
+        </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Javad Hussain | Portfolio</p>
+    <div class="socials">
+      <a href="mailto:javadhussain17@gmail.com">📧</a>
+      <a href="https://www.linkedin.com/in/javad-hussain-8744832a6/">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
