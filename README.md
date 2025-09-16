@@ -16,6 +16,7 @@ A lightweight, responsive portfolio built with **HTML + CSS + JavaScript**.
 ---
 
 ## Project Structure
+```bash
 .
 ├─ index.html
 ├─ style.css
@@ -23,7 +24,7 @@ A lightweight, responsive portfolio built with **HTML + CSS + JavaScript**.
 └─ assets/
   ├─ profile.jpg
   └─ Javad_Hussain.pdf
-
+```
 
 Customize
   -Replace assets/profile.jpg and assets/Javad_Hussain.pdf.
