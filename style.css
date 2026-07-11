@@ -340,3 +340,72 @@ body.light .btn-secondary{ color:#0e1320; border-color:#e5e7eb; }
   font-size: 18px; cursor: pointer;
 }
 .modal[hidden], .modal-backdrop[hidden]{ display:none; }
+
+/* ==========================
+   Responsive Intro Video
+========================== */
+
+.intro-video{
+    width:100%;
+    max-width:900px;
+    margin:2rem auto;
+    padding:0 1rem;
+}
+
+.intro-video video{
+    display:block;
+    width:100%;
+    height:auto;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(0,0,0,.25);
+}
+
+.video-caption{
+    text-align:center;
+    margin-top:12px;
+    color:var(--muted);
+    font-size:1rem;
+}
+
+/* Large Desktop */
+@media (min-width:1400px){
+    .intro-video{
+        max-width:1000px;
+    }
+}
+
+/* Laptop */
+@media (max-width:1024px){
+    .intro-video{
+        max-width:850px;
+    }
+}
+
+/* Tablet */
+@media (max-width:768px){
+    .intro-video{
+        max-width:100%;
+        padding:0 .8rem;
+    }
+
+    .video-caption{
+        font-size:.95rem;
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .intro-video{
+        padding:0 .5rem;
+    }
+
+    .intro-video video{
+        border-radius:12px;
+    }
+
+    .video-caption{
+        font-size:.9rem;
+    }
+}
